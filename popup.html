@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 250px;
+            height: 200px;
+        }
+
+        .title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .created {
+            color: white;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            background: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .image {
+            width: 60px;
+            height: 60px;
+        }
+
+        .price {
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <p class="title">Bitcoin Price</p>
+            <img id="bitcoin-image" class="image" />
+            <p class="created" id="created">CryptoGodSon</p>
+        </div>
+        <p id="price" class="price"></p>
+    </div>
+    <script src="popup.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var createdElement = document.getElementById('created');
+
+
+            var isCryptoGodSon = window.location.hostname === 'https://github.com/CryptGodSon';
+
+            if (isCryptoGodSon) {
+
+                createdElement.innerHTML =
+                    '<a href="https://github.com/CryptGodSon" target="_blank">CryptoGodSon</a>';
+            }
+        });
+    </script>
+</body>
+
+</html>
