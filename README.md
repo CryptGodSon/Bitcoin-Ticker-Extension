@@ -1,8 +1,6 @@
 # Bitcoin-Ticker-Extension
-Bitcoin Ticker Extension grab it and see what's the price of Bitcoin in USD. Working in Chrome and Firefox
-## Bitcoin Price Chrome Extension
-
 ### Overview
+Bitcoin Ticker Extension grab it and see what's the price of Bitcoin in USD. Working in Chrome and Firefox
 This Chrome extension provides a simple way to track the current price of Bitcoin directly from your browser. The extension fetches real-time data from the CoinGecko API and displays the information in a popup.
 
 ### Installation
